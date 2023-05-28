@@ -26,12 +26,11 @@ public class Principal extends calcularNomina {
         double horasTrabajadas = teclado.nextDouble();
 
         Trabajador trabajador = new Trabajador(nombre, precioHora, horasTrabajadas);
-        
+
 //        Operaciones para calcular el sueldo
         double sueldoBruto = calcularSueldoBruto(trabajador);
         double retencionesSueldo = calcularIRPF(sueldoBruto);
         double sueldoNeto = calcularSueldoNeto(sueldoBruto, retencionesSueldo);
-
 
         System.out.println("El nombre del trabajador es: " + trabajador.getNombre());
         System.out.println("El precio por horas es: " + trabajador.getPrecioHora());

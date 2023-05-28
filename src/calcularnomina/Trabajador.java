@@ -52,6 +52,11 @@ public class Trabajador extends Principal {
     public void setIrfp(int irfp) {
         this.irfp = irfp;
     }
+
+    @Override
+    public String toString() {
+        return "Trabajador{" + "nombre=" + nombre + ", precioHora=" + precioHora + ", horasTrabajadas=" + horasTrabajadas + ", irfp=" + irfp + '}';
+    }
     
     
     
