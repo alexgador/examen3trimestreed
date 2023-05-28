@@ -8,12 +8,12 @@ package calcularnomina;
  *
  * @author Usuario
  */
-public class Trabajador extends CalcularNomina {
+public class Trabajador extends Principal {
     
-    String nombre;
-    double precioHora;
-    double horasTrabajadas;
-    int irfp= 5;
+    private String nombre;
+    private double precioHora;
+    private double horasTrabajadas;
+    private int irfp= 5;
 
     public Trabajador(String nombre, double precioHora, double horasTrabajadas) {
         this.nombre = nombre;
