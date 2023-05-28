@@ -9,8 +9,10 @@ package calcularnomina;
  * @author Usuario
  */
 public class calcularNomina {
+    
 
     protected static int retencionIrpf = 5;
+
 
     public static double calcularSueldoBruto(Trabajador trabajador) throws Exception {
         if (trabajador.getPrecioHora() < 0 || trabajador.getHorasTrabajadas() < 0) {
@@ -28,6 +30,7 @@ public class calcularNomina {
         double retencionesSueldo = sueldoBruto * retencionIrpf / 100;
         return sueldoBruto;
     }
+
 
     public static double calcularSueldoNeto(double sueldoBruto, double retencionesSueldo) throws Exception {
         if (sueldoBruto < 0 || retencionesSueldo < 0) {

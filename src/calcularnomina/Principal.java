@@ -11,7 +11,7 @@ import java.util.Scanner;
  * @author Usuario
  */
 public class Principal extends calcularNomina {
-
+    
 
     public static void main(String[] args) throws Exception {
         Scanner teclado = new Scanner(System.in);
